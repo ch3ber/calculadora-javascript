@@ -27,14 +27,5 @@ btnDel.addEventListener('click', function() {
 
 function inputCharacter(event) {
    const character = event.target.value;
-   if (display.textContent == '0' && character == '0') {
-      return;
-   } else {
-      if (display.textContent == '0') {
-         display.textContent = '';
-         display.textContent += character;
-      } else {
-         display.textContent += character;
-      }
-   }
+   display.textContent += character;
 }
